@@ -2,20 +2,30 @@
 import Section from "./Section.astro";
 ---
 
-<Section title="" subtitle="" color="black">
+<Section
+  title="Model 3"
+  subtitle="Concertar una prueba de conduccion"
+  color="black"
+>
   <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a
+      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500"
+      href="#"
+    >
+      Explorar inventario
+    </a>
     <a
       class="border-[3px] border-white bg-white text-sm rounded font-medium text-black px-12 py-2 transition-colors hover:bg-black hover:text-white hover:border-black inline-flex justify-center items-center"
       href="#"
     >
-      Comprar ahora
+      Pedido personalizado
     </a>
   </div>
 
   <img
     slot="background"
-    src="/charge.avif"
-    alt="Charge"
+    src="/model-3.avif"
+    alt="Model 3"
     class="h-full w-full object-cover object-center"
   />
 </Section>
